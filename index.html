@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Theme Nav Bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --btncolor: rgb(250, 104, 104);
+            --borcolor: red;
+            --bgcolor: rgb(249, 194, 194);
+            /* --btncolor: rgb(128, 128, 247);
+            --borcolor: blue;
+            --bgcolor: rgb(188, 188, 244); */
+        }
+        
+        nav{
+            padding: 20px;
+            border-bottom: 3.5px solid var(--borcolor);
+            background-color: var(--bgcolor);
+        }
+
+        span{
+            border: 1px solid var(--btncolor);
+            background-color: var(--btncolor);
+            border-radius: 20px;
+            margin: 30px;
+            padding: 10px 12px;
+            font-size: 20px;
+
+        }
+        span:first-child{
+            margin-left: 1100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a multicolor website which can change color using CSS Variables -->
+    <!-- <nav>
+        <ul>
+            <li>Home</li>
+            <li>Sign Up</li>
+            <li>Login</li>
+            <li>About</li>
+            <li>Conatct Us</li>
+        </ul>
+    </nav> -->
+
+    <nav>
+        <span>Home</span>
+        <span>Sign Up</span>
+        <span>Login</span>
+        <span>About</span>
+        <span>Contact Us</span>
+    </nav>
+</body>
+</html>
